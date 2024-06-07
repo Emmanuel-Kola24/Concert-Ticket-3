@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  || Concert Ticket Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tick_container">
+    <h1>Concert Ticket Booking</h1>
+    <form id="bookingForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><span id="nameError" class="error"></span><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><span id="ageError" class="error"></span><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><span id="emailError" class="error"></span><br>
+
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date" required><span id="dateError" class="error"></span><br><br>
+
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" name="time" required><span id="timeError" class="error"></span><br><br>
+
+      <label for="ticketType">Ticket Type:</label>
+      <select id="ticketType" name="ticketType" class="ticketType" required>
+        <option value="Select ticket type">Select ticket type</option>
+        <option value="General Admission">General Admission</option>
+        <option value="VIP">VIP</option>
+      </select><span id="ticketTypeError" class="error"></span><br>
+
+      <label for="bookingType">Booking Type:</label>
+      <select id="bookingType" name="bookingType" class="bookingType" required>
+        <option value="Select booking type">Select booking type</option>
+        <option value="Individual">Individual</option>
+        <option value="Group">Group</option>
+      </select><span id="bookingTypeError" class="error"></span><br>
+
+      <label for="concert">Select Concert:</label>
+      <select id="concert" name="concert" required>
+        <option value="" disabled selected>Select a concert</option>
+        <option value="Lagos FreedomFestival 2024">Lagos FreedomFestival 2024</option>
+        <option value="Tenstrings Live Music show">Tenstrings Live Music show</option>
+        <option value="Echoes of Praise">Echoes of Praise</option>
+        <option value="Karaoke Night">Karaoke Night</option>
+        <option value="Joy of Music Africa(JOMA) 2024">Joy of Music Africa(JOMA) 2024</option>
+        <option value="A night of Poetry, Music and Vibes">A night of Poetry, Music and Vibes</option>
+        <option value="Animal Adventures concert">Animal Adventures concert</option>
+        <option value="Forces of nature concert">Forces of nature concert</option>
+        <option value="Toronto Concert">Toronto Concert</option>
+        <option value="Live music concert">Live music concert</option>
+      </select><span id="concertError" class="error"></span><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+
+    <div id="summary"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
